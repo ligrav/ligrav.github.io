@@ -10,7 +10,7 @@ a:active, a:visited, a:focus{
 }
 .wrapper {
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
 }
 .main    {
     position: relative;/*  что эт */
@@ -21,6 +21,12 @@ a:active, a:visited, a:focus{
     color: #fff;
     height: 100vh;
     background: #000 url(../img/main-bg2.jpg) 0 0 no-repeat;
+       background-size:100%; 
+  background-position: center   ;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
 }
 .main-overlay
