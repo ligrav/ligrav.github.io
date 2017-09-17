@@ -1,0 +1,225 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    font-style: 10px;
+}
+a:active, a:visited, a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.wrapper {
+    display: table-cell;
+    vertical-align: middle
+}
+.main    {
+    position: relative;/*  что эт */
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    background: #000 url(../img/main-bg2.jpg) 0 0 no-repeat;
+    
+}
+.main-overlay
+{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+ /* - подложка */}
+.main-header {
+    position: relative;
+    z-index: 2;
+}
+.main h1 {
+    margin-bottom: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 4.8rem;
+}
+.main p
+{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.main-header {
+/*     border: 1px solid red;
+     */}
+.main-line
+{
+    width: 200px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.main-down  /* ебать как это круто, transparent что бы была наведима transition время появления*/
+{
+    position: absolute;
+    color: #fff;
+    z-index: 4;
+    bottom: 2rem;
+    display: inline-block;
+    font-size: 2rem;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    line-height: 50px;
+     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.main-down:hover
+{
+    color: #fff;
+    border-color:#fff;
+}
+.portfolio {
+    padding: 10rem 0px;
+    text-align: center;
+}
+.section-header{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+    
+}
+.portfolio img {
+    widows: 100%;
+    max-width: 360px;
+    box-shadow: 0px 4px 29px 0px rgba(87, 92, 97, 0.54);
+    
+}
+.portfolio a{
+    display: block;
+    width: 17rem;
+    margin: 3rem auto 5rem;
+    color: #333;
+    border-bottom: 1px solid transparent;
+}
+.portfolio a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted #333;
+    
+}
+
+
+
+
+/* подвалподвалподвал */
+.footer{
+    background-color: #646464;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+}
+.footer strong {
+    font-weight: 300;
+    font-size: 2.4rem;
+    
+}
+.social-links {
+    margin-top: 1rem;
+    
+}
+.social-links a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    display: inline-block;
+    color: #fff;
+    border:solid 1px #fff;
+    border-radius: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;    
+}
+.social-links a:hover{
+    background-color: #fff;
+    color: #646464;
+    
+}
+.offer-btn {
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    margin: 1rem auto;
+    border: 1px solid #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    border-radius: 100px;
+     
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    
+}
+.offer-btn:hover {
+    background-color: #fff;
+   text-decoration: none;
+    color: #646464;
+    
+}
+.modal img {
+    width: 100%;
+}
+.modal-title
+{
+    font-weight: 800;
+    font-size: 2rem;
+    
+}
+.modal-btn {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 10px;
+}
+.modal-btn:hover{
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+.close {
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+        
+}
+@media (min-width: 0px) and (max-width: 767px ) {
+html {
+    font-size: 7px;
+}
+    .footer strong {
+        margin-top: 3rem 0 2rem;
+        display: inline-block;
+    }
+    social-links a{
+        font-size: 1.5rem;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+    
+    .footer strong {
+        margin-top: 3rem 0 2rem;
+        display: inline-block;
+    }
+        
+        
+    
+}
